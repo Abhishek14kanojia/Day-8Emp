@@ -8,5 +8,5 @@ public class main {
 		Employeewage employeewage = new Employeewage();
 				
 			employeewage.dailywage();
-		} 
+		}  
 }

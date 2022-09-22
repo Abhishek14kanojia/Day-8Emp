@@ -6,10 +6,12 @@ public class Employeewage {
 		int wage = 0;
 		int time = 1;
 		int part_time_hours = 8;
-
-	public void dailywage() {
+		int workingday = 20;
+		int wageforamonth = 0;
 		
-		int empadd = (int) (Math.floor (Math.random()*15)%2);
+	public void dailywage() {
+		for (int i = 0; i <= workingday; i++) {
+		int empadd = (int) (Math.floor (Math.random()*5)%2);
 		
 		switch (empadd) {
 		case 1: 
@@ -23,8 +25,10 @@ public class Employeewage {
 		default:
 			System.out.println(" is absent ");
 		}
+		wageforamonth = wage*workingday;
 		
-		
+		}
+		System.out.println(" Employee monthly wage is : " + wageforamonth);
 		System.out.println(" employee daily wage : " + wage );
 	}
 }
