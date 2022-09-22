@@ -9,5 +9,4 @@ public class main {
 				
 			employeewage.dailywage();
 		}
-
 }
