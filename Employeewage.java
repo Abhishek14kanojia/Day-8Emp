@@ -9,17 +9,19 @@ public class Employeewage {
 
 	public void dailywage() {
 		
-		int empadd = (int) (Math.floor (Math.random()*5)%2);
+		int empadd = (int) (Math.floor (Math.random()*15)%2);
 		
-		if (empadd == time ) {
-			System.out.println(" is present");
+		switch (empadd) {
+		case 1: 
+			System.out.println(" is present ");
 			wage = fulldayhours*wageperhours;
-		} else if (empadd == part_time_hours) {
+			break;
+		case 2:
 			System.out.println(" is present in part time ");
 			wage = part_time_hours*wageperhours;
-		}else {
-			System.out.println(" is Absent");
-			wage = 0;
+			break;
+		default:
+			System.out.println(" is absent ");
 		}
 		
 		
